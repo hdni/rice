@@ -1,0 +1,340 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Oxygen", sans-serif;
+	background: #fff;
+}
+
+a:focus {
+	outline: none;
+}
+	
+/* Header
+********************/
+
+#header {
+	height: 80px;
+	top: 0;
+	width: 100%;
+	background: transparent;
+	margin: 0;
+}
+
+#header #title {
+	width: 920px;
+	margin: 0 auto;
+}
+
+#header #title a {
+	color: #1f3461;
+	font-size: 32px;
+	text-decoration: none;
+	line-height: 80px;
+	transition: all 0.2s ease 0s;
+
+	font-family: "Oxygen Mono", monospace;
+}
+
+#header #title a:hover {
+	color: #1aa39a;
+	transition: all 0.2s ease 0s;
+}
+
+/* Main page
+********************/
+
+#main {
+	width: 960px;
+	margin: 0 auto;
+	margin-top: 0;
+}
+
+#main .desc {
+	width: 940px;
+	margin: 10px;
+	margin-bottom: 20px;
+}
+
+#main h1 {	
+	font-size: 30px;
+	line-height: 28px;
+	font-weight: 400;
+	text-align: center;
+	padding: 10px 0 10px 0;
+	margin: 10px;
+
+	color: #111e38;
+}
+
+#main p {
+	width: 460px;
+	text-align: center;
+	margin: 0 auto;
+
+	color: #78808f;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+#main h3 {
+	color: #182b52;
+	font-size: 19px;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+#main span {
+	padding-bottom: 1px;
+	border-bottom: 1px dotted #1aa39a;
+	transition: all 0.2s ease 0s;
+}
+
+#main span:hover {
+	border-bottom-style: solid;
+	transition: all 0.2s ease 0s;
+}
+
+/* Fleche preview */
+#fleche {
+	border-top: 1px solid #e2e4e7;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	height: 766px;
+}
+
+#fleche #left {
+	width: 479px;
+	float: left;
+	height: 630px;
+	overflow: hidden;
+	background: #fff;
+}
+
+#fleche #right {
+	width: 479px;
+	float: right;
+	height: 630px;
+	overflow: hidden;
+	background: #fff;
+}
+
+#fleche .desc a {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 30px;
+	color: #1aa39a;
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: 1px dotted #1aa39a;
+	transition: all 0.2s ease 0s;
+}
+
+#fleche .desc a:hover {
+	color: #1aa39a;
+	transition: all 0.2s ease 0s;
+	border-bottom-style: solid;
+}
+
+#fleche .gnome,
+#fleche .firefox,
+#fleche .terminal {
+	position: relative;
+	margin: 20px;
+	text-decoration: none;
+
+	border-radius: 2px;
+	background: #fff;
+}
+
+#fleche .terminal {
+	margin-top: 49px;
+	border-top: none;
+}
+
+#fleche .firefox {
+	padding-top: 0;
+	margin-bottom: 0px;
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+#fleche img {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 2px;
+	margin-bottom: -4px;
+	border: 1px solid #e2e4e7;
+}
+
+#fleche h2 {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	padding: 0;
+	margin: 0;
+	border-radius: 2px;
+
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	background: rgba(255,255,255,0.92);
+	border: 1px solid #dcdde0;
+	color: #1aa39a;
+	transition: all 0.2s ease 0s;
+}
+
+#fleche .gnome h2 {
+	height: 585px;
+	line-height: 585px;
+}
+
+#fleche .terminal h2 {
+	height: 267px;
+	line-height: 267px;
+}
+
+#fleche .firefox h2 {
+	height: 268px;
+	line-height: 268px;
+}
+
+#fleche a:hover h2 {
+	opacity: 1;
+	transition: all 0.2s ease 0s;
+}
+
+/* Other previews */
+#faience,
+#user-styles,
+#dotfiles {
+	height: 290px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	border-top: 1px solid #d9dbde;
+}
+
+#user-styles {
+	height: 380px;
+}
+
+#dotfiles {
+	height: 340px;
+}
+
+#faience #left,
+#user-styles #left,
+#dotfiles #left {
+	width: 439px;
+	margin: 20px;
+	float: left;
+	text-align: center;
+}
+
+#user-styles #left {
+	text-align: right;
+}
+
+#faience #right,
+#user-styles #right,
+#dotfiles #right {
+	width: 439px;
+	margin: 20px;
+	float: right;
+}
+
+#faience img,
+#user-styles img,
+#dotfiles img {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: -5px;
+	border-radius: 2px;
+	border: 1px solid #e2e4e7;
+}
+
+#faience #right p,
+#user-styles #left p,
+#dotfiles #right p {
+	text-align: left;
+	margin-bottom: 14px;
+	font-size: 15px;
+	width: 100%;
+}
+
+#user-styles #left p {
+	text-align: right;
+}
+
+#faience #right a,
+#user-styles #left a,
+#dotfiles #right a {
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 30px;
+	color: #1aa39a;
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: 1px dotted #1aa39a;
+	transition: all 0.2s ease 0s;
+}
+
+#faience #right a:hover,
+#user-styles #left a:hover,
+#dotfiles #right a:hover {
+	color: #1aa39a;
+	transition: all 0.2s ease 0s;
+	border-bottom-style: solid;
+}
+
+#faience .preview,
+#user-styles .preview,
+#dotfiles .preview {
+	position: relative;
+}
+
+#faience h2,
+#user-styles h2,
+#dotfiles h2 {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	margin: 0;
+	opacity: 0;
+	border-radius: 2px;
+
+	text-align: center;
+	line-height: 247px;
+	font-size: 20px;
+	font-weight: 700;
+	background: rgba(255,255,255,0.92);
+	border: 1px solid #dcdde0;
+	color: #1aa39a;
+	transition: all 0.2s ease 0s;
+}
+
+#user-styles h2 {
+	line-height: 342px;
+}
+
+#dotfiles h2 {
+	line-height: 267px;
+}
+
+#faience a:hover h2,
+#user-styles a:hover h2,
+#dotfiles a:hover h2 {
+	opacity: 1;
+	transition: all 0.2s ease 0s;
+}
