@@ -212,6 +212,7 @@ a:focus {
 }
 
 /* Other previews */
+#flex,
 #faience,
 #user-styles,
 #dotfiles {
@@ -229,6 +230,7 @@ a:focus {
 	height: 340px;
 }
 
+#flex #left,
 #faience #left,
 #user-styles #left,
 #dotfiles #left {
@@ -238,10 +240,12 @@ a:focus {
 	text-align: center;
 }
 
+#flex #left,
 #user-styles #left {
 	text-align: right;
 }
 
+#flex #right,
 #faience #right,
 #user-styles #right,
 #dotfiles #right {
@@ -250,6 +254,7 @@ a:focus {
 	float: right;
 }
 
+#flex img,
 #faience img,
 #user-styles img,
 #dotfiles img {
@@ -261,6 +266,7 @@ a:focus {
 	border: 1px solid #e2e4e7;
 }
 
+#flex #left p,
 #faience #right p,
 #user-styles #left p,
 #dotfiles #right p {
@@ -270,10 +276,12 @@ a:focus {
 	width: 100%;
 }
 
+#flex #left p,
 #user-styles #left p {
 	text-align: right;
 }
 
+#flex #left a,
 #faience #right a,
 #user-styles #left a,
 #dotfiles #right a {
@@ -287,6 +295,7 @@ a:focus {
 	transition: all 0.2s ease 0s;
 }
 
+#flex #left a:hover,
 #faience #right a:hover,
 #user-styles #left a:hover,
 #dotfiles #right a:hover {
@@ -295,12 +304,14 @@ a:focus {
 	border-bottom-style: solid;
 }
 
+#flex .preview,
 #faience .preview,
 #user-styles .preview,
 #dotfiles .preview {
 	position: relative;
 }
 
+#flex h2,
 #faience h2,
 #user-styles h2,
 #dotfiles h2 {
@@ -332,6 +343,7 @@ a:focus {
 	line-height: 267px;
 }
 
+#flex a:hover h2,
 #faience a:hover h2,
 #user-styles a:hover h2,
 #dotfiles a:hover h2 {
